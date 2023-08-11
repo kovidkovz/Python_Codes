@@ -1,15 +1,11 @@
-# Create a new list from a two list using the following condition
+# Remove all occurrences of a specific item from a list.
+# Given a Python list, write a program to remove all occurrences of item 20.
+list1 = [5, 20, 15, 20, 25, 50, 20]
+# for i in range(len(list1)):
+#     if list1[i]==20:
+#         list1.pop(i)
+# print(list1)
 
-# Given a two list of numbers, write a program to create a new list such that
-# the new list should contain odd numbers from the first list and even numbers from the second list.
-list1 = [10, 20, 25, 30, 35]
-list2 = [40, 45, 60, 75, 90]
-list=[]
-for i in list1:
-    if i%2!=0:
-        list.append(i)
-for j in list2:
-    if j%2==0:
-        list.append(j)
-
-print(list)
+while 20 in list1:
+    list1.remove(20)
+print(list1)
